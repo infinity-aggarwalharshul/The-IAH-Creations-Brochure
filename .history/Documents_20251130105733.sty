@@ -1,0 +1,316 @@
+\documentclass[11pt, a4paper]{article} 
+
+% --- UNIVERSAL PREAMBLE BLOCK ---
+\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2cm, right=2cm]{geometry}
+\usepackage{fontspec}
+
+\usepackage[english, provide=*]{babel}
+
+\babelprovide[import, onchar=ids fonts]{english}
+
+% Set default/Latin font to Sans Serif (Inter/Roboto style) for a modern look
+\babelfont{rm}{Noto Sans}
+
+% Add because main language is English
+\usepackage{enumitem}
+\setlist[itemize]{label=-}
+
+% --- CUSTOM PACKAGES FOR DESIGN ---
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{booktabs}   % Professional tables
+\usepackage{tabularx}   % Tables with adjustable width
+\usepackage{colortbl}   % Color in tables
+\usepackage{tcolorbox}  % Callout boxes
+\usepackage{hyperref}   % Links
+\usepackage{float}      % Positioning
+
+% --- BRAND COLORS ---
+\definecolor{primaryBlue}{RGB}{0, 51, 102}    % Deep Professional Blue
+\definecolor{accentGold}{RGB}{218, 165, 32}   % Gold for Highlights
+\definecolor{lightGray}{RGB}{245, 245, 245}   % Lighter Background for tables
+
+% --- HYPERLINK SETUP ---
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primaryBlue,
+    filecolor=primaryBlue,
+    urlcolor=primaryBlue,
+    pdftitle={The IAH Creations},
+    pdfauthor={IAH Creations},
+}
+
+% --- STYLING ---
+\titleformat{\section}
+{\color{primaryBlue}\Large\bfseries\uppercase}
+{}{0em}{}[\titlerule]
+
+\titleformat{\subsection}
+{\color{primaryBlue}\large\bfseries}
+{}{0em}{}
+
+\begin{document}
+
+% ==========================================
+% PAGE 1: INTRODUCTION & WEBSITE (SPW)
+% ==========================================
+
+\begin{center}
+    {\huge \textbf{\color{primaryBlue} THE IAH CREATIONS}}\\[0.5cm]
+    {\Large Future-Ready Digital Solutions}\\[0.2cm]
+    {\small INNOVATE $\cdot$ AUTOMATE $\cdot$ HOST}\\[1cm]
+\end{center}
+
+\begin{tcolorbox}[colback=lightGray, colframe=primaryBlue, title=\textbf{Welcome to the Future of Business}]
+    We specialize in rapid, high-quality digital prototyping and full-scale development. From single-page portfolios to complex multi-tasking applications, The IAH Creations delivers commercial-grade software tailored to global market needs.
+\end{tcolorbox}
+
+\vspace{0.5cm}
+
+\section{1. Website Creations}
+\textit{Professional digital presence tailored to your brand identity.}
+
+\vspace{0.5cm}
+\subsection*{1.1 Single Page Website (SPW)}
+\textbf{Prototyping Time:} $\approx$ 24 Hours \\
+Ideal for personal portfolios, landing pages, resumes, and event announcements.
+
+\begin{table}[H]
+\renewcommand{\arraystretch}{1.6}
+\begin{tabularx}{\textwidth}{|X|X|X|X|}
+    \hline
+    \rowcolor{primaryBlue} \color{white}\textbf{Feature} & \color{white}\textbf{Basic} & \color{white}\textbf{Medium} & \color{white}\textbf{Advance} \\
+    \hline
+    \textbf{Design} & Template Based & Semi-Custom & Fully Custom UI/UX \\
+    \hline
+    \textbf{Sections} & Up to 3 Sections & Up to 6 Sections & Unlimited Sections \\
+    \hline
+    \textbf{Hosting} & Basic Hosting & Fast Hosting & Premium CDN \\
+    \hline
+    \textbf{Support} & Email Support & Priority Email & 24/7 Chat Support \\
+    \hline
+    \rowcolor{lightGray} \textbf{Price (INR)} & \textbf{₹ 4,999} & \textbf{₹ 8,999} & \textbf{₹ 14,999} \\
+    \hline
+    \rowcolor{lightGray} \textbf{Price (USD)} & \textbf{\$ 60} & \textbf{\$ 110} & \textbf{\$ 180} \\
+    \hline
+    \rowcolor{lightGray} \textbf{Price (EUR)} & \textbf{€ 55} & \textbf{€ 100} & \textbf{€ 165} \\
+    \hline
+\end{tabularx}
+\end{table}
+
+\vfill
+\newpage
+
+% ==========================================
+% PAGE 2: DYNAMIC WEBSITES
+% ==========================================
+
+\section{Website Creations (Cont.)}
+
+\vspace{0.5cm}
+\subsection*{1.2 Dynamic Multi-Page Website}
+\textbf{Prototyping Time:} 72 Hrs -- 1 Week \\
+Best for corporate businesses, agencies, e-commerce, and blogs requiring content management systems (CMS).
+
+\begin{itemize}
+    \item \textbf{Scalability:} Easily add new pages and content.
+    \item \textbf{Interactivity:} Contact forms, blogs, and user comments.
+    \item \textbf{Commercial Use:} Ready for payment gateway integration.
+\end{itemize}
+
+\begin{table}[H]
+\renewcommand{\arraystretch}{1.6}
+\begin{tabularx}{\textwidth}{|X|X|X|X|}
+    \hline
+    \rowcolor{primaryBlue} \color{white}\textbf{Feature} & \color{white}\textbf{Basic} & \color{white}\textbf{Medium} & \color{white}\textbf{Advance} \\
+    \hline
+    \textbf{Pages} & Home + 3 Pages & Home + 7 Pages & Unlimited Pages \\
+    \hline
+    \textbf{Functionality} & Contact Form & CMS Integration & E-commerce Ready \\
+    \hline
+    \textbf{Responsiveness} & Mobile Friendly & All Devices & Adaptive Layouts \\
+    \hline
+    \textbf{SEO} & Basic Setup & Standard SEO & Advanced SEO \\
+    \hline
+    \rowcolor{lightGray} \textbf{Price (INR)} & \textbf{₹ 19,999} & \textbf{₹ 34,999} & \textbf{₹ 59,999} \\
+    \hline
+    \rowcolor{lightGray} \textbf{Price (USD)} & \textbf{\$ 240} & \textbf{\$ 420} & \textbf{\$ 720} \\
+    \hline
+    \rowcolor{lightGray} \textbf{Price (EUR)} & \textbf{€ 220} & \textbf{€ 380} & \textbf{€ 650} \\
+    \hline
+\end{tabularx}
+\end{table}
+
+\vfill
+\newpage
+
+% ==========================================
+% PAGE 3: WEB APPS (SPA)
+% ==========================================
+
+\section{2. Web App Creations}
+\textit{Powerful, browser-based software to automate your workflows.}
+
+\vspace{0.5cm}
+\subsection*{2.1 Single Page Application (SPA)}
+\textbf{Prototyping Time:} $\approx$ 24 Hours \\
+Fast, app-like experience in the browser using modern frameworks (React, Angular, Vue). The page never reloads, providing a smooth user experience.
+
+\begin{itemize}
+    \item \textbf{Performance:} Extremely fast load times after initial load.
+    \item \textbf{UX:} Fluid transitions and native-app feel.
+    \item \textbf{Use Cases:} Calculators, Dashboards, To-Do Lists.
+\end{itemize}
+
+\begin{table}[H]
+\renewcommand{\arraystretch}{1.6}
+\begin{tabularx}{\textwidth}{|X|c|c|c|}
+    \hline
+    \rowcolor{primaryBlue} \color{white}\textbf{Currency} & \color{white}\textbf{Basic} & \color{white}\textbf{Medium} & \color{white}\textbf{Advance} \\
+    \hline
+    \textbf{INR (₹)} & 24,999 & 44,999 & 89,999 \\
+    \hline
+    \textbf{USD (\$)} & 300 & 540 & 1,080 \\
+    \hline
+    \textbf{EUR (€)} & 275 & 495 & 990 \\
+    \hline
+\end{tabularx}
+\end{table}
+
+\vspace{1cm}
+\textbf{Feature Breakdown:}
+\begin{itemize}
+    \item \textbf{Basic:} Static Data, Interactive UI, Local Storage.
+    \item \textbf{Medium:} API Integration, User Authentication.
+    \item \textbf{Advance:} Real-time Data, Complex Logic, Cloud Database.
+\end{itemize}
+
+\vfill
+\newpage
+
+% ==========================================
+% PAGE 4: DYNAMIC WEB APPS
+% ==========================================
+
+\section{Web App Creations (Cont.)}
+
+\vspace{0.5cm}
+\subsection*{2.2 Multi-Tasking Dynamic Application}
+\textbf{Prototyping Time:} 72 Hrs -- 1 Week \\
+Comprehensive solutions for enterprises. Ideal for SaaS products, CRM systems, HR portals, and Enterprise Resource Planning (ERP).
+
+\begin{table}[H]
+\renewcommand{\arraystretch}{1.6}
+\begin{tabularx}{\textwidth}{|X|X|X|}
+    \hline
+    \rowcolor{primaryBlue} \color{white}\textbf{Tier} & \color{white}\textbf{Key Capabilities} & \color{white}\textbf{Global Pricing} \\
+    \hline
+    \textbf{Basic} & User Roles, CRUD Operations, Basic Reporting, Admin Panel & \textbf{\$ 600} \newline \textbf{₹ 49,999} \\
+    \hline
+    \textbf{Medium} & 3rd Party APIs, Automations, File Handling, Analytics & \textbf{\$ 1,200} \newline \textbf{₹ 99,999} \\
+    \hline
+    \textbf{Advance} & AI Integration, High Scalability, Microservices, Custom Security & \textbf{\$ 2,500+} \newline \textbf{₹ 2,00,000+} \\
+    \hline
+\end{tabularx}
+\end{table}
+
+\vspace{0.5cm}
+\begin{tcolorbox}[colback=white, colframe=primaryBlue, title=\textbf{Why Choose Dynamic Apps?}]
+    These applications are designed to handle complex business logic and multitasking operations simultaneously, making your business future-ready and efficient.
+\end{tcolorbox}
+
+\vfill
+\newpage
+
+% ==========================================
+% PAGE 5: MOBILE APPS (SPA/BASIC)
+% ==========================================
+
+\section{3. Mobile Application Creations}
+\textit{Native and Hybrid solutions for Android and iOS.}
+
+\vspace{0.5cm}
+\subsection*{3.1 Single Page Application (Mobile SPA)}
+\textbf{Prototyping Time:} $\approx$ 24 Hours -- 48 Hours \\
+Lightweight mobile applications focused on speed and simplicity. These are often Web-View based or simple utility apps tailored for information display.
+
+\begin{table}[H]
+\renewcommand{\arraystretch}{1.6}
+\begin{tabularx}{\textwidth}{|X|X|X|}
+    \hline
+    \rowcolor{primaryBlue} \color{white}\textbf{Tier} & \color{white}\textbf{Features} & \color{white}\textbf{Pricing} \\
+    \hline
+    \textbf{Basic} & WebView Wrapper, Splash Screen, App Icon & \textbf{₹ 29,999 / \$ 360} \\
+    \hline
+    \textbf{Medium} & Simple Native UI, Offline Mode, Basic Notifications & \textbf{₹ 49,999 / \$ 600} \\
+    \hline
+    \textbf{Advance} & Smooth Animations, Simple API Calls, Store Submission & \textbf{₹ 79,999 / \$ 950} \\
+    \hline
+\end{tabularx}
+\end{table}
+
+\vspace{0.5cm}
+\textbf{Ideal For:}
+\begin{itemize}
+    \item Converting an existing website into an App.
+    \item Event brochures or informational apps.
+    \item Simple calculators or utility tools.
+\end{itemize}
+
+\vfill
+\newpage
+
+% ==========================================
+% PAGE 6: MOBILE APPS (DYNAMIC) & CONTACT
+% ==========================================
+
+\section{Mobile Application Creations (Cont.)}
+
+\vspace{0.5cm}
+\subsection*{3.2 Dynamic Multi-Tasking Application}
+\textbf{Prototyping Time:} 72 Hrs -- 1 Week+ \\
+Full-featured Native or Hybrid applications (Flutter/React Native) designed for high performance and complex user interactions.
+
+\begin{table}[H]
+\renewcommand{\arraystretch}{1.6}
+\begin{tabularx}{\textwidth}{|X|X|X|}
+    \hline
+    \rowcolor{primaryBlue} \color{white}\textbf{Tier} & \color{white}\textbf{Capabilities} & \color{white}\textbf{Pricing} \\
+    \hline
+    \textbf{Basic} & User Auth, Database, Social Login & \textbf{₹ 99,999 / \$ 1,200} \\
+    \hline
+    \textbf{Medium} & Real-time Chat, GPS/Maps, Payments & \textbf{₹ 1,50,000 / \$ 1,800} \\
+    \hline
+    \textbf{Advance} & Complex Backend, Video Streaming, AI Features & \textbf{₹ 2,50,000+ / \$ 3,000+} \\
+    \hline
+\end{tabularx}
+\end{table}
+
+\vfill
+
+% --- CONTACT SECTION ---
+\begin{center}
+    \rule{\textwidth}{0.5pt} \\[0.5cm]
+    {\Large \textbf{Ready to Start Your Project?}} \\[0.3cm]
+    
+    Connect with us instantly via our Virtual Business Card: \\[0.2cm]
+    
+    \fcolorbox{primaryBlue}{white}{
+        \parbox{0.8\textwidth}{
+            \centering
+            \vspace{0.2cm}
+            \large \href{https://infinity-aggarwalharshul.github.io/The-IAH-Creations-Virtual-Business-Card/}{Click Here to Visit The IAH Creations Virtual Card} \\
+            \vspace{0.2cm}
+            \footnotesize \url{https://infinity-aggarwalharshul.github.io/The-IAH-Creations-Virtual-Business-Card/}
+            \vspace{0.2cm}
+        }
+    }
+    
+    \vspace{0.5cm}
+    \textbf{The IAH Creations} \\
+    \textit{Designed for Commercial Success}
+\end{center}
+
+\vfill
+
+\end{document}

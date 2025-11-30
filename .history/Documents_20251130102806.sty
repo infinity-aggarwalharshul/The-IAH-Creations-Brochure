@@ -1,0 +1,236 @@
+% cSpell:ignore usepackage documentclass definecolor tcbset hypersetup babelprovide babelfont filecolor linkcolor urlcolor pdftitle pdfauthor
+\documentclass[11pt, a4paper]{article}
+
+% --- UNIVERSAL PREAMBLE BLOCK ---
+\usepackage[a4paper, top=1.5cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+\usepackage{fontspec}
+
+\usepackage[english, bidi=basic, provide=*]{babel}
+\babelprovide[import, onchar=ids fonts]{english}
+
+% Set default/Latin font to Sans Serif (Noto Sans) for a modern look
+\babelfont{rm}{Noto Sans}
+
+% Essential Packages
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{booktabs}
+\usepackage{colortbl}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{tikz}
+
+% --- COLOR DEFINITIONS ---
+\definecolor{primaryBrand}{HTML}{0F4C81} % Classic Blue
+\definecolor{secondaryBrand}{HTML}{F5F5F5} % Light Gray
+\definecolor{accentColor}{HTML}{D4AF37} % Gold for premium feel
+\definecolor{textDark}{HTML}{333333}
+
+% --- HYPERLINK SETUP ---
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primaryBrand,
+    filecolor=primaryBrand,
+    urlcolor=primaryBrand,
+    pdftitle={IAH Creations Services Brochure},
+    pdfauthor={IAH Creations}
+}
+
+% --- TCOLORBOX STYLES ---
+\tcbset{
+    enhanced,
+    colback=white,
+    colframe=primaryBrand,
+    boxrule=0.5mm,
+    arc=2mm,
+    fonttitle=\bfseries\large,
+    coltitle=white,
+    left=2mm, right=2mm, top=2mm, bottom=2mm
+}
+
+\begin{document}
+
+% --- HEADER / TITLE PAGE ---
+\begin{center}
+    \vspace*{0.5cm}
+    {\Huge \textbf{\textcolor{primaryBrand}{IAH CREATIONS}}}\\[0.5em]
+    {\Large \textit{Future-Ready Digital Solutions & Rapid Prototyping}}\\[0.5em]
+    \rule{15cm}{1pt}
+\end{center}
+
+\vspace{0.5cm}
+
+\begin{center}
+    \parbox{0.9\textwidth}{
+        \centering
+        \textbf{Welcome to IAH Creations.} We specialize in transforming ideas into digital reality with speed and precision. Whether you need a lightning-fast single-page prototype or a complex enterprise ecosystem, our tiered services are designed to scale with your ambition.
+    }
+\end{center}
+
+\vspace{0.5cm}
+
+% --- SECTION 1: WEBSITE CREATIONS ---
+\begin{tcolorbox}[title=1. WEBSITE CREATIONS]
+    \textbf{Overview:} High-performance websites tailored for brand presence and conversion.
+    
+    \vspace{0.3cm}
+    
+    \textbf{A) Single Page Website (SPW) -- Rapid Launch} \\
+    \textit{Prototyping Duration: $\approx$ 24 Hours}
+    
+    \begin{center}
+    \rowcolors{2}{secondaryBrand}{white}
+    \begin{tabular}{p{0.15\textwidth} p{0.55\textwidth} p{0.2\textwidth}}
+        \toprule
+        \textbf{Tier} & \textbf{Features Included} & \textbf{Price Estimate} \\
+        \midrule
+        \textbf{Basic} & One-page scroll, Contact Form, Mobile Responsive, Hero Section. & \$149 / ₹12,000 \\
+        \textbf{Medium} & + SEO Optimization, WhatsApp Integration, Social Media Feeds, Smooth Animations. & \$299 / ₹25,000 \\
+        \textbf{Advanced} & + Custom Branding, Analytics Dashboard, CMS for Text Edits, Lead Capture System. & \$499 / ₹40,000 \\
+        \bottomrule
+    \end{tabular}
+    \end{center}
+
+    \vspace{0.3cm}
+    
+    \textbf{B) Dynamic Website (Multi-Page) -- Scalable Growth} \\
+    \textit{Prototyping Duration: 72 Hrs -- 1 Week}
+    
+    \begin{center}
+    \rowcolors{2}{secondaryBrand}{white}
+    \begin{tabular}{p{0.15\textwidth} p{0.55\textwidth} p{0.2\textwidth}}
+        \toprule
+        \textbf{Tier} & \textbf{Features Included} & \textbf{Price Estimate} \\
+        \midrule
+        \textbf{Basic} & Up to 5 Pages (Home, About, Services, Contact, Blog), Admin Panel. & \$599 / ₹50,000 \\
+        \textbf{Medium} & + E-commerce (Up to 20 Products), User Login/Signup, Newsletter Integration. & \$999 / ₹85,000 \\
+        \textbf{Advanced} & + Unlimited Pages, Custom Backend Logic, Database Design, High-Traffic Server Setup. & \$1,999 / ₹1.6L \\
+        \bottomrule
+    \end{tabular}
+    \end{center}
+\end{tcolorbox}
+
+\vspace{0.5cm}
+
+% --- SECTION 2: WEB APPS CREATIONS ---
+\begin{tcolorbox}[title=2. WEB APPLICATION CREATIONS, colframe=primaryBrand!90!black]
+    \textbf{Overview:} Interactive, browser-based software solutions.
+    
+    \vspace{0.3cm}
+    
+    \textbf{A) Single Page Application (SPA) -- Focused Utility} \\
+    \textit{Prototyping Duration: $\approx$ 24 Hours}
+    
+    \begin{center}
+    \rowcolors{2}{secondaryBrand}{white}
+    \begin{tabular}{p{0.15\textwidth} p{0.55\textwidth} p{0.2\textwidth}}
+        \toprule
+        \textbf{Tier} & \textbf{Features Included} & \textbf{Price Estimate} \\
+        \midrule
+        \textbf{Basic} & Simple Tool (Calculator/Converter), Interactive UI, Fast Loading. & \$399 / ₹35,000 \\
+        \textbf{Medium} & + External API Integration (Weather, Stocks), Data Visualization (Charts). & \$799 / ₹65,000 \\
+        \textbf{Advanced} & + Progressive Web App (PWA) Offline Mode, Local Storage, Auth System. & \$1,299 / ₹1.1L \\
+        \bottomrule
+    \end{tabular}
+    \end{center}
+
+    \vspace{0.3cm}
+    
+    \textbf{B) Dynamic Application (Multi-Tasking) -- Enterprise Logic} \\
+    \textit{Prototyping Duration: 72 Hrs -- 1 Week}
+    
+    \begin{center}
+    \rowcolors{2}{secondaryBrand}{white}
+    \begin{tabular}{p{0.15\textwidth} p{0.55\textwidth} p{0.2\textwidth}}
+        \toprule
+        \textbf{Tier} & \textbf{Features Included} & \textbf{Price Estimate} \\
+        \midrule
+        \textbf{Basic} & CRUD Operations (Create, Read, Update, Delete), User Roles, File Uploads. & \$1,499 / ₹1.25L \\
+        \textbf{Medium} & + Real-time Chat/Notifications, Payment Gateway (Stripe/Razorpay). & \$2,999 / ₹2.5L \\
+        \textbf{Advanced} & + AI/ML Model Integration, SaaS Architecture, Cloud Scaling, Complex Workflows. & \$4,999+ / ₹4.0L+ \\
+        \bottomrule
+    \end{tabular}
+    \end{center}
+\end{tcolorbox}
+
+\newpage
+
+% --- SECTION 3: MOBILE APPLICATION CREATIONS ---
+\begin{tcolorbox}[title=3. MOBILE APPLICATION CREATIONS, colframe=primaryBrand!80!black]
+    \textbf{Overview:} Native and Cross-Platform mobile experiences.
+    
+    \vspace{0.3cm}
+    
+    \textbf{A) Single View App (SPA) -- Information \& Utility} \\
+    \textit{Prototyping Duration: $\approx$ 24 Hours}
+    
+    \begin{center}
+    \rowcolors{2}{secondaryBrand}{white}
+    \begin{tabular}{p{0.15\textwidth} p{0.55\textwidth} p{0.2\textwidth}}
+        \toprule
+        \textbf{Tier} & \textbf{Features Included} & \textbf{Price Estimate} \\
+        \midrule
+        \textbf{Basic} & WebView Wrapper or Simple Info Display, Standard UI Components. & \$699 / ₹60,000 \\
+        \textbf{Medium} & + Native Navigation, Offline Content Support, Splash Screen. & \$1,299 / ₹1.1L \\
+        \textbf{Advanced} & + Device Feature Access (Camera/GPS), Store Submission Support. & \$2,499 / ₹2.0L \\
+        \bottomrule
+    \end{tabular}
+    \end{center}
+
+    \vspace{0.3cm}
+    
+    \textbf{B) Dynamic Application (Multi-Tasking) -- Full Ecosystem} \\
+    \textit{Prototyping Duration: 72 Hrs -- 1 Week}
+    
+    \begin{center}
+    \rowcolors{2}{secondaryBrand}{white}
+    \begin{tabular}{p{0.15\textwidth} p{0.55\textwidth} p{0.2\textwidth}}
+        \toprule
+        \textbf{Tier} & \textbf{Features Included} & \textbf{Price Estimate} \\
+        \midrule
+        \textbf{Basic} & User Accounts, Cloud Database, Social Networking Features. & \$2,999 / ₹2.5L \\
+        \textbf{Medium} & + Push Notifications, Background Services, In-App Purchases. & \$5,999 / ₹5.0L \\
+        \textbf{Advanced} & + Cross-Platform (iOS \& Android), High-Performance Gaming/AR, Custom API. & Custom Quote \\
+        \bottomrule
+    \end{tabular}
+    \end{center}
+\end{tcolorbox}
+
+\vspace{1cm}
+
+% --- CALL TO ACTION & CONTACT ---
+\begin{tcolorbox}[colback=primaryBrand!5!white, colframe=accentColor, title=READY TO START?]
+    \centering
+    \vspace{0.2cm}
+    {\Large \textbf{Let's Build The Future Together.}}
+    
+    \vspace{0.4cm}
+    
+    Visit our Virtual Business Card to connect, view our portfolio, and get a custom quote instantly:
+    
+    \vspace{0.4cm}
+    
+    % The requested link box
+    \fcolorbox{primaryBrand}{white}{
+        \parbox{0.9\textwidth}{
+            \centering
+            \vspace{0.2cm}
+            \large \href{https://infinity-aggarwalharshul.github.io/The-IAH-Creations-Virtual-Business-Card/}{Click Here: IAH Creations Virtual Business Card}\\
+            \small \url{https://infinity-aggarwalharshul.github.io/The-IAH-Creations-Virtual-Business-Card/}
+            \vspace{0.2cm}
+        }
+    }
+    
+    \vspace{0.4cm}
+    
+    \textit{Prices mentioned are indicative and subject to change based on specific project requirements and complexity. \\ Currency conversion is approximate.}
+    
+\end{tcolorbox}
+
+\vfill
+\begin{center}
+    \small \copyright \the\year \ IAH Creations. All Rights Reserved.
+\end{center}
+
+\end{document}
