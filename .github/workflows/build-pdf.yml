@@ -1,0 +1,45 @@
+name: Build and Deploy Brochure PDF
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+permissions:
+  contents: write
+
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Rename sty to tex (Compatibility Fix)
+        run: |
+          if [ -f "Documents.sty" ]; then
+            mv Documents.sty Documents.tex
+            echo "Renamed Documents.sty to Documents.tex for compilation"
+          fi
+
+      - name: Compile LaTeX Document
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: Documents.tex
+          latexmk_use_xelatex: true
+
+      - name: Upload PDF as Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Brochure_PDF
+          path: Documents.pdf
+
+      - name: Deploy PDF to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
+          keep_files: false
+          force_orphan: true
+          exclude_assets: ".github,*.tex,*.md,*.sty"

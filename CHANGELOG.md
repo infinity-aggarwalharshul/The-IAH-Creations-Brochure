@@ -44,9 +44,17 @@ All notable changes to this project will be documented in this file.
 - **Page 5**: Mobile SPA pricing and use cases
 - **Page 6**: Dynamic Mobile App pricing and contact information
 
+### Automation
+- GitHub Actions workflow for automatic PDF compilation
+- XeLaTeX-based build process with Noto Sans font support
+- Automatic deployment to GitHub Pages
+- PDF artifact generation for easy download
+- Trigger on push to main/master branches
+
 ### Documentation
 - Comprehensive README with technical requirements
 - MIT License for open-source distribution
 - Contributing guidelines for community involvement
 - Git ignore rules optimized for LaTeX projects
 - Detailed changelog for version tracking
+- cSpell configuration for LaTeX-specific terms

@@ -54,6 +54,7 @@ To compile this LaTeX document, you need:
 
 ## Compilation
 
+### Manual Compilation
 1. Clone this repository
 2. Compile using XeLaTeX:
    ```bash
@@ -61,11 +62,23 @@ To compile this LaTeX document, you need:
    ```
 3. The output PDF will be generated in the same directory
 
+### Automated Deployment
+This repository includes GitHub Actions workflow for automatic PDF generation:
+- **Trigger**: Push to main/master branch
+- **Process**: Automatically compiles LaTeX to PDF using XeLaTeX
+- **Output**: PDF available as downloadable artifact and deployed to GitHub Pages
+- **Workflow File**: `final pdf.yaml`
+
 ## File Structure
 
 ```
 Business Brochure/
+├── .github/
+│   └── workflows/
+│       └── build-pdf.yml # GitHub Actions workflow for PDF generation
 ├── Documents.sty          # Main LaTeX document (6 pages)
+├── final pdf.yaml         # Workflow configuration file
+├── cspell.json           # Spell checker configuration
 ├── README.md             # Project documentation
 ├── LICENSE               # MIT License
 ├── .gitignore           # Git ignore rules
