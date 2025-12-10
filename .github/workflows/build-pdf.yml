@@ -16,24 +16,17 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Rename sty to tex (Compatibility Fix)
-        run: |
-          if [ -f "Documents.sty" ]; then
-            mv Documents.sty Documents.tex
-            echo "Renamed Documents.sty to Documents.tex for compilation"
-          fi
-
       - name: Compile LaTeX Document
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: Documents.tex
+          root_file: documents.tex
           latexmk_use_xelatex: true
 
       - name: Upload PDF as Artifact
         uses: actions/upload-artifact@v4
         with:
           name: Brochure_PDF
-          path: Documents.pdf
+          path: documents.pdf
 
       - name: Deploy PDF to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

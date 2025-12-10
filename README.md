@@ -58,7 +58,7 @@ To compile this LaTeX document, you need:
 1. Clone this repository
 2. Compile using XeLaTeX:
    ```bash
-   xelatex Documents.sty
+   xelatex documents.tex
    ```
 3. The output PDF will be generated in the same directory
 
