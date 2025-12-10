@@ -1,0 +1,19 @@
+OVERLEAF UPLOAD INSTRUCTIONS
+============================
+
+1. Go to https://www.overleaf.com
+2. Create a free account or login
+3. Click "New Project" → "Upload Project"
+4. Upload the file: IAH-Creations-Brochure.zip
+5. Once uploaded, click "Recompile" button
+6. Download the PDF from the right panel
+
+IMPORTANT NOTES:
+- The document uses XeLaTeX compiler
+- If compilation fails, go to Menu → Settings → Compiler and select "XeLaTeX"
+- The document requires Noto Sans font (available in Overleaf)
+- Final PDF will be 6 pages with professional branding
+
+FILE LOCATION:
+The zip file is located at:
+c:\Users\Mi\Desktop\Python\GitHub Projects\Business Website\Business Brochure\IAH-Creations-Brochure.zip
